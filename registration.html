@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form </title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style_for_registr.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=AmKSjKDznwNJZ--5EX5OCRP9DVM8tbpEJAb5Z5gzFA2MRp_zAYxD2F9yhA4F1XnteNFx0x2kcYObTdPhZW8LXsFC2OkS2WrKrOx4rEPV67BUJ1A_Cvfki_a0tgR4gGujGHRbtEBMLMRctuxo-cdJYThSCislHC9fAvttiiDH8NX7_KOk4M9ExEk6oOYTXo_TMFmV6E8nMkHCzYnp1aP3Vm_Fx85qVaNJAR4SCsLd-jWsdOLZf_smx1_zrcS8quV6fx53dyWVxOOVu5ROsixxcKt7BREHEDGDGLAkla1r_KvkNhbmtFvVR1gDwrwvgIpkqFzyYB7KXnGB4MQ1XIeGoxSKlLesyZByjhjHp8KCPKPhvrPwFbvgL8oXej4VyNOwbUme6c5mzrJqMyTGsE_5BW6OWBk9tNZchJJgTNGd8E_VmiL6R7wBMBbPKiWcSs5znsFclkX4DBEn09pMgbi0qxM2izMN5UStaLRvKe_JagNQJ4llfILSb_q8Q7uUq-x7gzAtKCrUeC4rVScFBFqXvZQzs-DtxpXIVK30ty-gwo7HRGtTkP3BfOqt36Q_BECz3ozklYoj44ogCOPKdD4D1Cb8gtShxgQR3XKGudL8JC8Y-QbhSbUztEZgvCQXAqWMYu9dmMFbGiMvbXYVh2k9SNQHIt0pEuk94L0_SNZaa2-obqxOMUmUP0DAuz0qJNQocB0XPeNfYzPLIL0Gxkm-dguKdHJwwSXnKYH1RWGi8BjpjtpODNHzqQTP5iNi4J2SBVbInW9zmKUfj85qbz4GbZCJwcKrPv53IpddXRlsoHzK8vhLQo_6bq56oYqNlyGYgfkmd3tirJ68eu-CUl26pSc5BzzfUkT0SXCFWZk8g-M" charset="UTF-8"></script></head>
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Регистрация для админов</h2>
+                        <form method="POST" class="register-form" id="register-form" action="http://localhost/verstka/php/registration_homepage_admin.php" name="registr" onsubmit="return validate_registr()">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="restaurant_name" id="fname" placeholder="Введите название ресторана"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name=" city_name" id="lname" placeholder="Введите город"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="number" name=" phone_number" id="lname" placeholder="Введите номер телефона"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="email" name="email" id="userid" placeholder="Введите email/логин"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="password" id="pwd" placeholder="Введите пароль"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Повторите пароль"/>
+                            </div>
+                           
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Регистрация"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="img/signup-image.jpg" alt="sing up image"></figure>
+                     
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+   
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
